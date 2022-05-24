@@ -1,0 +1,390 @@
+/* HEADER */
+
+header {
+  background-image: url(../header1.svg);
+
+  background-position: center center;
+
+  background-position-x: center;
+  background-position-y: center;
+    
+  width: 100%;
+  }
+  
+  @media ( max-width: 800px ) { .logo {
+  width: 320px;
+
+  min-width: none;
+
+  height: 500px;
+  }
+  }
+  
+  .tattoo-piercing {
+  position: relative;
+  top: -200px;
+  font-size: 24px;
+  max-width: 290px;
+  margin: 32px auto 1.5em;
+  color: black;
+
+  text-align: center;
+  font-family: 'Rye', coursive;
+  }
+  
+  .logo {
+  display: flex;
+  margin: auto;
+  
+  width: 100vw;
+  max-width: 60rem;
+  box-sizing: border-box;
+  }
+
+  /* midia social */
+
+  .social-midia {
+  font-size: 22px;
+
+  display: flex;
+  justify-content: center;
+  }
+  
+  @media ( max-width: 800px ) { .social{
+  padding: 0 auto;
+  }
+  }
+  
+  #facebook {
+  padding: 0.6em 0 0 0.5rem;
+  }
+  
+  #instagram {
+  padding: 0.6em 0 0 0.5rem;
+  }
+  
+  #whatsapp {
+  padding: 0.6em 0 0 0.5rem;
+  }
+
+  /* FIM */
+
+  /* DESTAQUES E CONTEUDO */
+
+#destaque-promocao {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 4%;
+}
+
+.destaque-promocao, .img-destaque, .img2-destaque {
+  width: 22em;
+}
+
+@media ( max-width: 768px ) { #destaque-promocao, .img2-destaque {
+  width: 24em;
+  flex-flow: column wrap;
+
+   margin: 0 auto;
+   margin-bottom: 8%;
+   
+  }
+  .img-destaque{
+    width: 24em;
+    flex-flow: column wrap;
+  
+     margin: 0 auto;
+  }
+  }
+
+*,
+*::before,
+*::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.imagem{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+/*   background-color: #eee;
+  padding: 0 1.5rem; */
+}
+
+.blog-post{
+  width: 100%;
+  max-width: 100%;
+  padding: 5rem;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 1.4rem 8rem rgba(0, 0, 0, .2);
+  display: flex;
+  align-items: center;
+  border-radius: .8rem;
+}
+
+.blog-post__img{
+  min-width: 35rem;
+  max-width: 35rem;
+  height: 30rem;
+  transform: translateY(-8rem);
+  position: relative;
+}
+
+.blog-post__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: .8rem;
+}
+
+.blog-post__img::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to right, rgba(78, 78, 78, 0.8),
+                                          rgba(0, 0, 0, 0.5));
+  box-shadow: .5rem .5rem 3rem 1px rgba(0, 0, 0, .05); 
+  border-radius: .8rem; 
+}
+
+.blog-post__date span {
+  display: flex;
+  color: rgba(0, 0, 0, .5);
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin: .5rem 10%;
+}
+
+.blog-post__title {
+  font-size: 3.0rem;
+  margin: 1.5rem 10% 2rem;
+  text-transform: uppercase;
+  color: rgb(112, 0, 0);
+  font-family: 'Alfa Slab One';
+  font-weight: 400;
+}
+
+.blog-post__topico {
+  margin-bottom: 3rem;
+  margin: .5rem 10%;
+  display: inherit;
+  font-size: 1.9rem;
+  color: #333;
+  font-family: 'Alfa Slab One';
+  font-weight: 400;
+}
+
+.blog-post__topico:hover{
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1068px) {
+  .blog-post{
+    max-width: 80rem;
+  }
+  .blog-post__img{
+    min-width: 30rem;
+    max-width: 30rem;
+  }
+}
+
+@media screen and (max-width: 868px) {
+  .blog-post{
+    max-width: 70rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .blog-post{
+    padding: 2.5rem;
+    flex-direction: column;
+  }
+
+  .blog-post__img{
+    min-width: 100%;
+    max-width: 100%;
+    transform: translate(0, -8rem);
+  }
+}
+
+
+
+
+/* FIM */
+
+/* CONTEUDO COM IMAGENS MEIO */
+
+  @media ( max-width: 800px ) { .container h2{
+  float: inline-start;
+
+  color: white;
+  font-family: 'Rye', cursive;
+  min-width: 320px;
+  }
+  }
+  
+  @media ( max-width: 800px ) { .container p{
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  }
+  }
+  
+.card{
+  width: 300px;
+  height: 350px;
+  background-color: #333;
+  border-radius: 10px;
+  outline: 1px solid rgba(255, 255, 255, .5);
+  outline-offset: -8px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, .1);
+  position: relative;
+  overflow: hidden;
+  grid-template-columns: 100px 100px 100px 100px;
+  display: inline-block;
+  margin: 0 20px 0 0;
+}
+
+@media screen and (max-width: 770px ) {
+  .card{
+    width: 24em;
+    display: flex;
+    margin: 0 auto 20px;
+  }
+}
+
+.card-image{
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform .75s;
+}
+
+.card:hover .card-image{
+  transform: scale(1.15);
+}
+
+.card-title{
+  position: absolute;
+  left: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  bottom: 15px;
+  font-size: 17px;
+  padding: 4px 10px;
+  text-shadow: 0 0 1px rgba(0, 0, 0, .5);
+  color: white;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 15px;
+}
+
+.card-title:hover{
+  color: rgb(228, 228, 228);
+  transition: .30s ease-in-out;
+  text-decoration: none;
+}
+  
+  .container h2 {
+  color: white;
+  font-family: 'Rye', cursive;
+  }
+  
+  .container p {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  }
+  
+
+  @media screen and (max-width: 770px ) {
+    .titulo{
+      width: fit-content;
+    }
+  }
+  
+
+  /* Rodapé */
+
+  footer {
+  width: 100%;
+  padding: 0.5em;
+  margin-top: 3em;
+  bottom: 0px;
+  border-top: 1.5px solid #ffffff;
+    
+  color: #ffffff;
+  text-align: center;
+  background: rgb(0, 0, 0);
+  font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .copy{
+    font-size: 11px;
+  }
+
+  .pay {
+  font-size: 15px;
+  }
+  
+  .desenvolvido {
+  font-size: 10px;
+  text-align: center;
+
+  padding: 1em 0 0 0;
+  position: absolute;
+  right:0;
+  }
+
+  @media ( max-width: 800px ) { .desenvolvido {
+  text-align: center;
+
+  position: absolute;
+
+  right: 0;
+  left: 0;
+  }
+  }
+  
+  /* Cor da Midia Social */
+
+  .green-color{
+  color: rgb(255, 255, 255);
+  }
+  
+  .green-color:hover {
+  text-decoration: none;
+  
+  color: rgb(211, 211, 211);
+  }
+  
+  .red-color {
+  color: rgb(255, 255, 255);
+  }
+  
+  .red-color:hover {
+  text-decoration: none;
+  
+  color: rgb(211, 211, 211);
+  }
+  
+  .blue-color {
+  color: white;
+  }
+  
+  .blue-color:hover {
+  text-decoration: none;
+  
+  color: rgb(214, 214, 214);
+  }
+
+  .midia-social {
+  font-size: 25px;
+  }
