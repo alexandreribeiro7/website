@@ -1,6 +1,6 @@
 # website
 
-#### Para o codigo funcionar corretamente, você terá que retirar todas as imagens da respectivas pastas
+#### Para o codigo funcionar corretamente você terá que retirar todas as imagens da respectivas pastas..
 #### -Sobre
 #### -Galeria
 #### -Galeria-Piercing
