@@ -7,4 +7,4 @@
 #### -Inicio-Galeria
 #### -Blog
 
-Link do site temporario: https://mdiniz.netlify.app/ 
+Link do site para testes: https://mdiniz.netlify.app/ 
